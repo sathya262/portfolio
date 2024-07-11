@@ -1,0 +1,33 @@
+body{
+  background: linear-gradient(to left top, #004ff9,#000000);
+ color: #fff;
+}
+.gradient-text{
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  text-wrap: nowrap;
+  animation: typing-text steps(40) 4s infinite, blink linear 0.1s infinite;
+  display: inline-block;
+  width: 0;
+}
+.gradient-title{
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t from-blue-500 to-sky-500 text-transparent;
+}
+@keyframes typing-text{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 330px;
+  }
+}
+
+
+@keyframes typing-text{
+  50%{
+    border-color: transparent;
+  }
+}
